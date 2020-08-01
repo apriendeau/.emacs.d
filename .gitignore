@@ -1,0 +1,5 @@
+auto-save/*
+auto-save-list/*
+straight/*
+.lsp-session*
+.DS_Store
