@@ -8,6 +8,8 @@
     (setq auto-save-list-file-prefix
       emacs-tmp-dir)
 
+(defconst cache-dir (concat user-emacs-directory ".local/cache/"))
+
 (defconst emacs-bootstrap-dir (expand-file-name "bootstrap" user-emacs-directory))
 ;; enable sourcing from init scripts in emacs.d/subinits
 (push emacs-bootstrap-dir load-path)

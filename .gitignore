@@ -1,5 +1,6 @@
 auto-save/*
 auto-save-list/*
+.local/*
 straight/*
 .lsp-session*
 .DS_Store
