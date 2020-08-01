@@ -17,14 +17,10 @@
 (use-package init-loader
   :straight t)
 
-(add-hook 'prog-mode-hook 'display-line-numbers-mode)
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
-(toggle-scroll-bar -1)
-(tool-bar-mode -1)
-
 (require 'init-loader)
 (init-loader-load (expand-file-name "inits" user-emacs-directory))
 (init-loader-load)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
