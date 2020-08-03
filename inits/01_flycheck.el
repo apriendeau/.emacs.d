@@ -1,4 +1,4 @@
-;;; package flycheck installation 
+;;; package flycheck installation
 (use-package flycheck
   :straight t
   :ensure t

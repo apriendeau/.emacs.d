@@ -12,8 +12,6 @@
         company-backends  '(company-capf)
         company-frontends '(company-pseudo-tooltip-frontend
                             company-echo-metadata-frontend)))
-(use-package company-go
-  :straight t)
 (use-package company-dict
   :straight t)
 (use-package company-prescient
