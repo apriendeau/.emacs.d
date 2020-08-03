@@ -1,21 +1,16 @@
-;; Major modes
-(use-package coffee-mode
-	:straight t)
-(use-package js2-mode
-	:straight t)
-(use-package rsjx-mode
-	:straight t)
 (use-package typescript-mode
-	:straight t)
-(use-package prettier-js
+  :straight t
+  :ensure t)
+(use-package js2-mode
   :straight t)
+(use-package rjsx-mode
+  :straight t)
+(use-package prettier-js
+  :straight t
+  :ensure t)
 
-(setq-default web-mode-markup-indent-offset 2
-              web-mode-code-indent-offset 2
-              web-mode-css-indent-offset 2
-              js-indent-level 2
-              js2-indent-level 2
-			  rsjx-indent-level 2
+(setq-default js2-indent-level 2
+	      rsjx-indent-level 2
               css-indent-offset 2
               typescript-indent-level 2)
 

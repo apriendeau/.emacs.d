@@ -13,6 +13,8 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 
+(load "straight-x")
+
 (straight-use-package 'use-package)
 
 (provide 'package-management)
