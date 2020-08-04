@@ -26,3 +26,5 @@
 
 (when austin/tweaking
   (global-set-key (kbd "C-|") 'austin/reload))
+
+(setq-default cursor-type 'bar)
