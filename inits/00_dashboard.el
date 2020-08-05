@@ -1,6 +1,5 @@
 (use-package dashboard
   :straight t
-  :ensure t
   :init
   (setq dashboard-center-content t
 	dashboard-startup-banner 'logo

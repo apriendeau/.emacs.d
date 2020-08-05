@@ -6,8 +6,7 @@
 (use-package rjsx-mode
   :straight t)
 (use-package prettier-js
-  :straight t
-  :ensure t)
+  :straight t)
 
 (setq-default js2-indent-level 2
 	      rsjx-indent-level 2

@@ -1,6 +1,5 @@
 (use-package counsel
   :straight t
-  :ensure t
   :bind
   (("M-x" . counsel-M-x)
    ("M-y" . counsel-yank-pop)
@@ -11,7 +10,6 @@
    ;; :pin melpa-stable
    :straight t
    :diminish ivy-mode
-   :ensure t
    :bind*
    (("C-s" . swiper)
     ("C-x C-f" . counsel-find-file)
@@ -46,11 +44,9 @@
 
 (use-package counsel-projectile
   :straight t
-  :ensure t
   :config
   (counsel-projectile-mode)
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map))
 
 (use-package ivy-hydra
-  :straight t
-  :ensure t)
+  :straight t)

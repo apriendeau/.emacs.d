@@ -12,17 +12,17 @@
         treemacs-indentation-string " "))
 
 (require 'treemacs-custom-theme)
+
 (global-set-key (kbd "C-c C-t") 'treemacs) ; Ctl+c + Ctrl+t neotree-toggle
+
 
 (use-package projectile
   :straight t)
 
 (use-package treemacs-projectile
   :straight t
-  :after treemacs projectile
-  :ensure t)
+  :after treemacs projectile)
 
 (use-package treemacs-magit
   :straight t
-  :after treemacs magit
-  :ensure t)
+  :after treemacs magit)

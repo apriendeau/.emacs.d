@@ -1,4 +1,4 @@
 (use-package dracula-theme
-	:straight t)
+  :straight t)
 
 (load-theme 'dracula t)

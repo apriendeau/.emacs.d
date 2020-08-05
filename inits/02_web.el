@@ -1,6 +1,5 @@
 (use-package web-mode
   :straight t
-  :ensure t
   :config
   (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.hbs?\\'" . web-mode))
