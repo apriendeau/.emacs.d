@@ -20,6 +20,6 @@
   :config
   ;; NOTE prescient config duplicated with `ivy'
   (setq prescient-save-file (concat cache-dir "prescient-save.el"))
-  (prescient-persist-mode +1)))
+  (prescient-persist-mode +1))
 
 (add-hook 'after-init-hook 'global-company-mode)

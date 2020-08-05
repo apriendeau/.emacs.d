@@ -11,8 +11,11 @@
 (defconst cache-dir (concat user-emacs-directory ".local/cache/"))
 
 (defconst emacs-bootstrap-dir (expand-file-name "bootstrap" user-emacs-directory))
+(defconst emacs-themes-dir (expand-file-name "themes" user-emacs-directory))
+
 ;; enable sourcing from init scripts in emacs.d/subinits
 (push emacs-bootstrap-dir load-path)
+(push emacs-themes-dir load-path)
 
 (require 'package-management)
 
