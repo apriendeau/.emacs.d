@@ -13,8 +13,8 @@
 
 (require 'treemacs-custom-theme)
 
-(global-set-key (kbd "C-c C-t") 'treemacs) ; Ctl+c + Ctrl+t neotree-toggle
-
+(global-set-key (kbd "C-c C-t") 'treemacs) ; Ctl+c + Ctrl+t treemacs toggle
+(define-key treemacs-mode-map [mouse-1] #'treemacs-single-click-expand-action)
 
 (use-package projectile
   :straight t)
@@ -23,6 +23,6 @@
   :straight t
   :after treemacs projectile)
 
-(use-package treemacs-magit
-  :straight t
-  :after treemacs magit)
+;;(use-package treemacs-magit
+  ;;:straight t
+  ;;:after treemacs magit)
