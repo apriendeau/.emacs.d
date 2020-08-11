@@ -1,19 +1,24 @@
 (use-package typescript-mode
   :straight t
-  :ensure t)
+  :mode (("\\.ts$" . typescript-mode))
+  :init
+  (add-hook 'typescript-mode-hook 'prettier-js-mode))
+
 (use-package js2-mode
-  :straight t)
+  :straight t
+  :init
+  (add-hook 'js2-mode-hook 'prettier-js-mode))
+
 (use-package rjsx-mode
-  :straight t)
+  :straight t
+  :init
+  (add-hook 'rsjx-mode-hook 'prettier-js-mode))
+
 (use-package prettier-js
   :straight t)
 
 (setq-default js2-indent-level 2
 	      rsjx-indent-level 2
               css-indent-offset 2
+	      sass-indent-offset 2
               typescript-indent-level 2)
-
-(add-hook 'js2-mode-hook 'prettier-js-mode)
-(add-hook 'rsjx-mode-hook 'prettier-js-mode)
-(add-hook 'web-mode-hook 'prettier-js-mode)
-(add-hook 'typescript-mode-hook 'prettier-js-mode)
