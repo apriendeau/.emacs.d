@@ -1,9 +1,0 @@
-* Default
-** emacs config
- - path :: ~/.emacs.d
-* Abstract Projects
-** projects
- - path :: ~/Go/src/github.com/goabstract/projects
-* Abstract UI
-** ui
- - path :: ~/Go/src/github.com/goabstract/ui
