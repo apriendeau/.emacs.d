@@ -1,6 +1,10 @@
 (use-package company
   :straight t
-  :init (add-hook 'after-init-hook 'global-company-mode))
+  :init
+  (add-hook 'after-init-hook 'global-company-mode))
+
+(defvar +lsp-company-backends 'company-capf)
+
 
 (use-package company-lsp
   :straight t)

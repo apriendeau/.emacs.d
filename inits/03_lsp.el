@@ -11,11 +11,19 @@
   :hook (lsp-mode . lsp-enable-which-key-integration)
   :commands (lsp)
   :init
+  (setq
+   lsp-enable-file-watchers nil
+   lsp-idle-delay 0.500
+   lsp-completion-provider :capf) ;; 1mb
   (dolist (dir '(
                "[/\\\\]build"
                "[/\\\\]node_modules"))
     (push dir lsp-file-watch-ignored)))
 
+
+(setq
+ read-process-output-max (* 1024 1024)
+ gc-cons-threshold 100000000)
 
 (use-package lsp-ivy
   :straight t
