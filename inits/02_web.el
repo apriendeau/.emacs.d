@@ -3,7 +3,7 @@
   :init
   (add-hook 'web-mode-hook 'prettier-js-mode)
   :config
-  (add-to-list 'auto-mode-alist '("\\.tsx?\\'" . web-mode))
+  ;(add-to-list 'auto-mode-alist '("\\.tsx?\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.hbs?\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.as[cp]x?\\'" . web-mode))

@@ -8,8 +8,15 @@
   (treemacs-load-theme "custom-theme")
   :config
   (setq treemacs-width 30
+	treemacs-recenter-after-tag-follow nil
+	treemacs-recenter-after-file-follow nil
+	treemacs-recenter-after-project-jump nil
+	treemacs-recenter-after-project-expand nil
+	treemacs-recenter-distance 0
 	treemacs-indentation 1
-        treemacs-indentation-string " "))
+        treemacs-indentation-string " "
+	treemacs-git-mode 'deferred)
+  (define-key treemacs-mode-map (kbd "C-c C-f") 'treemacs-find-file))
 
 (require 'treemacs-custom-theme)
 
@@ -23,6 +30,6 @@
   :straight t
   :after treemacs projectile)
 
-;;(use-package treemacs-magit
-  ;;:straight t
-  ;;:after treemacs magit)
+(use-package treemacs-magit
+  :straight t
+  :after treemacs magit)

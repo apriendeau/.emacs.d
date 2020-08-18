@@ -1,6 +1,7 @@
 (use-package typescript-mode
   :straight t
   :mode (("\\.ts$" . typescript-mode))
+  :mode (("\\.tsx$" . typescript-mode))
   :init
   (add-hook 'typescript-mode-hook 'prettier-js-mode))
 
