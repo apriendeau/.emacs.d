@@ -2,14 +2,14 @@
 
 (use-package lsp-mode
   :straight t
-  :hook (go-mode . lsp)
+  :hook (go-mode . lsp-deferred)
   :hook (ruby-mode . lsp)
   :hook (rjsx-mode . lsp)
   :hook (typescript-mode . lsp)
   :hook (css-mode . lsp)
   :hook (sass-mode . lsp)
   :hook (lsp-mode . lsp-enable-which-key-integration)
-  :commands (lsp)
+  :commands (lsp lsp-deferred)
   :init
   (setq
    lsp-enable-file-watchers nil
@@ -28,10 +28,6 @@
 (use-package lsp-ivy
   :straight t
   :commands lsp-ivy-workspace-symbol)
-
-(use-package lsp-ui
-  :straight t
-  :commands lsp-ui-mode)
 
 (use-package company-lsp
   :straight t
