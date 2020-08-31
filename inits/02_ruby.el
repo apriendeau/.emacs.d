@@ -11,3 +11,10 @@
 
 (use-package company-inf-ruby
   :straight t)
+
+(use-package rubocopfmt
+  :straight t
+  :hook
+  (ruby-mode . rubocopfmt-mode)
+  :config
+  (setq rubocopfmt-on-save-use-lsp-format-buffer t))
