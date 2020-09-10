@@ -29,5 +29,7 @@
 
 (setq-default cursor-type 'bar)
 
+(global-set-key (kbd "C-/") 'comment-or-uncomment-region)
+
 ;; because typing yes or no sucks
 (defalias 'yes-or-no-p 'y-or-n-p)
