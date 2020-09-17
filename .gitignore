@@ -8,9 +8,9 @@ transient/*
 .cache/*
 .cache
 backups
-*.rc
 .lsp-session*
 .DS_Store
 projectile-bookmarks.eld
+projectile.cache
 .mc-lists.el
 url/*
