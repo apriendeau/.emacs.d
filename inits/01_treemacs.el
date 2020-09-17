@@ -23,9 +23,6 @@
 (global-set-key (kbd "C-c t") 'treemacs) ; Ctl+c + Ctrl+t treemacs toggle
 (define-key treemacs-mode-map [mouse-1] #'treemacs-single-click-expand-action)
 
-(use-package projectile
-  :straight t)
-
 (use-package treemacs-projectile
   :straight t
   :after treemacs projectile)

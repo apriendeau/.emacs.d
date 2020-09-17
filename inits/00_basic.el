@@ -2,6 +2,7 @@
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 (toggle-scroll-bar -1)
 (tool-bar-mode -1)
+(delete-selection-mode)
 
 (setq user-full-name "Austin Riendeau")
 (setq user-mail-address "austin@apriendeau.com")

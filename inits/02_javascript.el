@@ -7,6 +7,7 @@
 
 (use-package js2-mode
   :straight t
+  :mode (("\\.js$" . js2-mode))
   :init
   (add-hook 'js2-mode-hook 'prettier-js-mode))
 

@@ -45,8 +45,7 @@
 (use-package counsel-projectile
   :straight t
   :config
-  (counsel-projectile-mode)
-  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map))
+  (counsel-projectile-mode))
 
 (use-package ivy-hydra
   :straight t)
