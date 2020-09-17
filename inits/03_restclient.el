@@ -1,3 +1,4 @@
 (use-package restclient
+  :straight t
   :mode (("\\.rc$" . restclient-mode))
-  :straight t)
+  :mode (("\\.request$" . restclient-mode)))
