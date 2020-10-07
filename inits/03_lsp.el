@@ -2,13 +2,13 @@
 
 (use-package lsp-mode
   :straight t
-  :hook (go-mode . lsp-deferred)
-  :hook (ruby-mode . lsp)
-  :hook (rjsx-mode . lsp)
-  :hook (typescript-mode . lsp)
-  :hook (css-mode . lsp)
-  :hook (sass-mode . lsp)
-  :hook (lsp-mode . lsp-enable-which-key-integration)
+  :hook ((go-mode . lsp-deferred)
+	 (ruby-mode . lsp)
+	 (typescript-mode . lsp)
+	 (dockerfile-mode . lsp)
+	 (css-mode . lsp)
+	 (sass-mode . lsp)
+	 (lsp-mode . lsp-enable-which-key-integration))
   :commands (lsp lsp-deferred)
   :init
   (setq

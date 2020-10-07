@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: use-package
-# key: use-pack
+# key: new-package
 # --
 (use-package ${package}
 $>:straight t)

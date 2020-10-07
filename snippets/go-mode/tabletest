@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: tabletest
+# key: tabletest
+# --
+
+func $0(t *testing.T) {
+$>testcases := []struct {
+$>$>description string
+$>}{
+$>$>{
+$>$>$>description: "success",
+$>$>},
+$>}
+
+$>for i, test := range testcases {
+$>$>test := test
+$>$>t.Run(fmt.Sprintf("%d", i), func(t *testing.T) {
+$>$>$>t.Log(test.description)
+$>$>})
+$>}
+}
