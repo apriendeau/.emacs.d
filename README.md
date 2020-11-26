@@ -2,7 +2,7 @@
 
 ### Install Emacs
 
-* brew install emacs-plus@27 --with-modern-black-variant-icon --with-jansson
+* brew install emacs-plus@27 --with-modern-black-variant-icon
 
 ### Prereqs
 * go
