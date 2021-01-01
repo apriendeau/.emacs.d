@@ -8,10 +8,12 @@
 	 (dockerfile-mode . lsp)
 	 (css-mode . lsp)
 	 (sass-mode . lsp)
+	 (rust-mode . lsp)
 	 (lsp-mode . lsp-enable-which-key-integration))
   :commands (lsp lsp-deferred)
   :init
   (setq
+   lsp-rust-server 'rustic-lsp-server
    lsp-enable-file-watchers nil
    lsp-idle-delay 0.500
    lsp-completion-provider :capf) ;; 1mb

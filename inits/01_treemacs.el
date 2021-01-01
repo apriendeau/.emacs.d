@@ -21,6 +21,7 @@
 (require 'treemacs-custom-theme)
 
 (global-set-key (kbd "C-c t") 'treemacs) ; Ctl+c + Ctrl+t treemacs toggle
+
 (define-key treemacs-mode-map [mouse-1] #'treemacs-single-click-expand-action)
 
 (use-package treemacs-projectile

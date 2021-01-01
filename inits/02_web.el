@@ -1,15 +1,15 @@
 (use-package web-mode
   :straight t
-  :init
-  (add-hook 'web-mode-hook 'prettier-js-mode)
+  :hook ('web-mode . 'prettier-js-mode)
+  :mode (("\\.tsx?\\'" . web-mode))
+  :mode (("\\.html?\\'" . web-mode))
+  :mode (("\\.hbs?\\'" . web-mode))
+  :mode (("\\.as[cp]x?\\'" . web-mode))
+  :mode (("\\.(cs|vb)*html?\\'" . web-mode))
   :config
-  ;(add-to-list 'auto-mode-alist '("\\.tsx?\\'" . web-mode))
-  (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
-  (add-to-list 'auto-mode-alist '("\\.hbs?\\'" . web-mode))
-  (add-to-list 'auto-mode-alist '("\\.as[cp]x?\\'" . web-mode))
-  (add-to-list 'auto-mode-alist '("\\.(cs|vb)*html?\\'" . web-mode))
   (setq web-mode-enable-auto-closing t
 	web-mode-css-indent-offset 2
+	web-mode-code-indent-offset 2
 	web-mode-enable-auto-quoting t
 	web-mode-markup-indent-offset 2))
 
@@ -21,9 +21,8 @@
 
 (use-package scss-mode
   :straight t
-  :mode (("\\.scss$" . scss-mode))
-  :init
-  (add-hook 'scss-mode-hook 'prettier-js-mode))
+  :hook ('scss-mode . 'prettier-js)
+  :mode (("\\.scss$" . scss-mode)))
 
 (use-package rainbow-mode
   :straight t)
