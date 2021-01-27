@@ -31,6 +31,12 @@
 (setq-default cursor-type 'bar)
 
 (global-set-key (kbd "C-/") 'comment-or-uncomment-region)
-
+(global-set-key (kbd "C-~") 'rgrep)
 ;; because typing yes or no sucks
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+;; (require 'sql)
+;; (add-to-list 'sql-postgres-login-params '(port))
+
+;; (add-hook 'sql-interactive-mode-hook (lambda ()
+;;                                        (toggle-truncate-lines t)))
