@@ -17,4 +17,5 @@
   :hook
   (ruby-mode . rubocopfmt-mode)
   :config
-  (setq rubocopfmt-on-save-use-lsp-format-buffer t))
+  (setq rubocopfmt-rubocop-command "/Users/austin/.rbenv/shims/rubocop")
+  (setq rubocopfmt-use-bundler-when-possible nil))
