@@ -1,5 +1,6 @@
 ;; -*- lexical-binding: t -*-
 ;; set up a separate location for backup and temp files
+(setq package-enable-at-startup nil)
 
 (defconst emacs-tmp-dir (expand-file-name "auto-save" user-emacs-directory))
 (defvar --backup-directory (concat user-emacs-directory "backups"))

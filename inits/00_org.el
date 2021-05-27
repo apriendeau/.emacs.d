@@ -1,5 +1,5 @@
 (use-package org
-  :straight org-plus-contrib
+  :straight t
   :config
   (require 'org-tempo))
 

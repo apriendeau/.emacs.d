@@ -7,10 +7,6 @@
 (use-package company-go
   :straight t)
 
-(use-package flycheck-golangci-lint
-  :straight t
-  :hook (go-mode . flycheck-golangci-lint-setup))
-
 (add-to-list 'auto-mode-alist '("\\.mod" . fundamental-mode))
 
 (add-hook 'go-mode-hook

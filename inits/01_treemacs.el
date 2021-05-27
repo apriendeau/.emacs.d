@@ -3,10 +3,10 @@
 
 (use-package treemacs
   :straight t
-  :init
-  (treemacs-resize-icons 20)
-  (treemacs-load-theme "custom-theme")
+  :after 'all-the-icons
   :config
+  (treemacs-load-theme "all-the-icons")
+  (treemacs-resize-icons 12)
   (setq treemacs-width 30
 	treemacs-recenter-after-tag-follow nil
 	treemacs-recenter-after-file-follow nil
@@ -15,10 +15,9 @@
 	treemacs-recenter-distance 0
 	treemacs-indentation 1
         treemacs-indentation-string " "
-	treemacs-git-mode 'deferred)
-  (define-key treemacs-mode-map (kbd "C-c C-f") 'treemacs-find-file))
+	treemacs-git-mode 'deferred))
 
-(require 'treemacs-custom-theme)
+
 
 (global-set-key (kbd "C-c t") 'treemacs) ; Ctl+c + Ctrl+t treemacs toggle
 
