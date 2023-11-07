@@ -10,9 +10,9 @@ This is my personal emacs.d setup that lets me work on projects.
 ### Prereqs
 * go
   * `brew install go`
-  * `go get -u github.com/nsf/gocode`
-  * `go get -u golang.org/x/tools/cmd/goimports`
-  * `go get -u golang.org/x/tools/gopls@latest`
+  * `go install -u github.com/nsf/gocode`
+  * `go install -u golang.org/x/tools/cmd/goimports`
+  * `go install -u golang.org/x/tools/gopls@latest`
 * node
   * `brew install node`
   * `npm i -g javascript-typescript-langserver vscode-css-languageserver-bin dockerfile-language-server-nodejs`
