@@ -5,7 +5,7 @@ This is my personal emacs.d setup that lets me work on projects.
 ### Install Emacs (using d12frosted)
 
 * brew tap d12frosted/emacs-plus
-* brew install emacs-plus@27 --with-modern-black-variant-icon
+* brew install emacs-plus@29 --with-modern-black-variant-icon
 
 ### Prereqs
 * go
